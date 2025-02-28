@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OAuth Callback</title>
+</head>
+<body>
+    <h1>Authorization Successful</h1>
+    <p>You can close this page now.</p>
+    <script>
+        // Optional: Capture the authorization code from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const authCode = urlParams.get('code');
+        console.log('Authorization Code:', authCode);
+    </script>
+</body>
+</html>
